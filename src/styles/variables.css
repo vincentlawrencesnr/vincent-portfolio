@@ -1,0 +1,86 @@
+:root {
+
+  /* Background Colors */
+  --background-color: #0B1120;
+  --surface-color: #111827;
+  --card-color: #1E293B;
+
+  /* Text Colors */
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+
+  /* Accent */
+  --primary-color: #3B82F6;
+  --primary-hover: #2563EB;
+
+  /* Border */
+  --border-color: #334155;
+
+}
+
+
+/*
+
+:root
+
+This is called a pseudo-class selector.
+
+It represents the root element of your HTML document.
+
+In HTML, the root element is:
+
+<html>
+
+So these two selectors are similar:
+
+html {
+}
+
+and
+
+:root {
+}
+
+However, when defining CSS variables, :root is the standard and recommended place because variables declared there are global.
+
+That means every element on the page can use them.
+
+Think of it like a public static variable in C#.
+
+Example:
+
+public static string CompanyName = "TravelJapa";
+
+Every class can access it.
+
+Similarly,
+
+:root {
+    --primary-color: blue;
+}
+
+Every CSS selector can use --primary-color.
+
+
+*
+Why is :root used?
+
+Suppose you write:
+
+.card{
+    --card-color:#1E293B;
+}
+
+Now only elements inside .card can use --card-color.
+
+But if you write:
+
+:root{
+    --card-color:#1E293B;
+}
+
+Then every selector in your stylesheet can use it.
+
+That's why you'll almost always see theme colors, fonts, spacing, and other design constants declared inside :root. It provides a single, global place to define values that you want to reuse throughout your entire website.
+*/

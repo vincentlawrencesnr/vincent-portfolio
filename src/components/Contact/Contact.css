@@ -1,0 +1,526 @@
+.contact-section{
+
+    padding:100px 0;
+
+    background:var(--surface-color);
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+}
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.contact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:22px;
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:18px;
+
+    transition:.35s ease;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3B82F6;
+
+    box-shadow:
+
+        0 10px 30px rgba(59,130,246,.12);
+
+}
+
+.contact-icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.1);
+
+    color:#3B82F6;
+
+    font-size:1.5rem;
+
+    flex-shrink:0;
+
+}
+
+.contact-card h4{
+
+    margin-bottom:5px;
+
+}
+
+.contact-card a{
+
+    color:var(--text-secondary);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contact-card a:hover{
+
+    color:#3B82F6;
+
+}
+
+.contact-card p{
+
+    margin:0;
+
+    color:var(--text-secondary);
+
+}
+
+.email-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.copy-btn{
+
+    border:none;
+
+    background:none;
+
+    color:#3B82F6;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.3s;
+
+}
+
+.copy-btn:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* contact-form */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    color:var(--text-primary);
+
+}
+
+.form-group input,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid var(--border-color);
+
+    border-radius:12px;
+
+    background:var(--card-color);
+
+    color:var(--text-primary);
+
+    font-size:1rem;
+
+    transition:.3s ease;
+
+    resize:none;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#3B82F6;
+
+    box-shadow:
+
+        0 0 0 4px rgba(59,130,246,.15);
+
+}
+
+/* 
+In Css, outline: none; removes the visual ouline that browsers draw around elements. It is most frequently used to hide the default highlight ring that appears when an interactive element (like button, input field, or link) gains keyboard focus.
+
+*/
+
+.send-btn{
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#3B82F6;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+.send-btn:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-3px);
+
+}
+
+.custom-toast{
+
+    position:fixed;
+
+    top:100px;
+
+    right:30px;
+
+    width:360px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    z-index:999999;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.18);
+
+    animation:
+
+    slideInRight .45s ease,
+
+    fadeOut .45s ease 3s forwards;
+}
+
+.success-toast{
+
+    background:#ECFDF5;
+
+    border-left:6px solid #22C55E;
+
+    color:#14532D;
+
+}
+
+.error-toast{
+
+    background:#FEF2F2;
+
+    border-left:6px solid #EF4444;
+
+    color:#991B1B;
+
+}
+
+.toast-icon{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.7);
+
+    font-weight:bold;
+
+    font-size:1.2rem;
+
+    flex-shrink:0;
+
+}
+
+.custom-toast h4{
+
+    margin-bottom:6px;
+
+}
+
+.custom-toast p{
+
+    margin:0;
+
+    line-height:1.6;
+
+}
+
+@keyframes slideInRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(100%);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeOut{
+
+    to{
+
+        opacity:0;
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .contact-info{
+        margin-bottom: 18px;
+    }
+}
+
+/*
+transform:translateX(100%);
+
+means
+
+"Move yourself to the right by 100% of YOUR OWN WIDTH."
+
+Your toast is
+
+360px
+
+wide.
+
+So
+
+translateX(100%)
+
+means
+
+Move right 360px.
+
+Not 100% of the browser.
+
+Not 100% of the parent.
+
+100% of itself.
+
+
+What does
+translateX(0)
+
+mean?
+
+Simple.
+
+Don't move me.
+
+Zero pixels.
+
+Zero percent.
+
+Stay exactly where CSS originally positioned you.
+
+So
+
+translateX(0)
+
+means
+
+Original Position. It means no translation. It is exactly the same as not using transform at all.
+
+
+###
+
+forwards
+
+This one confuses almost everyone the first time.
+
+Let's see what happens without it.
+
+Your animation is
+
+@keyframes fadeOut{
+
+    to{
+
+        opacity:0;
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+At the end of the animation
+
+the toast becomes
+
+opacity:0;
+
+transform:translateX(100%);
+
+Now imagine the animation finishes.
+
+CSS asks
+
+"Should I keep these values?"
+
+If you don't say anything...
+
+CSS answers
+
+"No."
+
+So it goes back to its original state.
+
+Visible
+
+↓
+
+Fade Out
+
+↓
+
+Animation Ends
+
+↓
+
+Visible Again 😅
+
+Not what we want.
+
+When you add
+
+forwards
+
+you're telling CSS
+
+"Keep the final values of the animation after it finishes."
+
+So instead of
+
+Visible
+
+↓
+
+Fade Out
+
+↓
+
+Visible Again
+
+you get
+
+Visible
+
+↓
+
+Fade Out
+
+↓
+
+Stay invisible
+
+Exactly what we want.
+
+FORWARDS - in css animations is a value for the animation-fill-mode property that forces an element to stay at its final animation styles after the animation finishes playing, instead of resetting to its original CSS values.
+*/

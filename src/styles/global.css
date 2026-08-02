@@ -1,0 +1,42 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--background-color);
+
+    color:var(--text-primary);
+
+}
+
+/*
+The * means
+
+Every element.
+
+Now every element uses the easier sizing model.
+
+
+*
+Summary
+
+There are two box-sizing modes:
+
+1. content-box (default)	                                            2. border-box
+1. width applies only to the content. Padding and borders are added on top, increasing the element's final size.	
+
+2. width applies to the entire element (content + padding + border). The content area shrinks if needed so the total size stays fixed.
+*/

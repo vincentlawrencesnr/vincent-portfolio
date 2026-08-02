@@ -1,0 +1,413 @@
+.hero-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:var(--background-color);
+
+    overflow:hidden;
+
+}
+
+.hero-content{
+
+    animation:slideUp 1s ease;
+
+}
+
+.hero-greeting{
+
+    color:var(--primary-color);
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.hero-name{
+
+    font-size:4.5rem;
+
+    font-family:'Montserrat',sans-serif;
+
+    color:var(--text-primary);
+
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+.hero-title{
+
+    color:var(--text-secondary);
+
+    margin-top:20px;
+
+    font-size:2rem;
+
+    font-weight:600;
+
+}
+
+.hero-description{
+
+    color:var(--text-muted);
+
+    margin-top:25px;
+
+    line-height:1.9;
+
+    max-width:560px;
+
+}
+
+.hero-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+    background:var(--primary-color)!important;
+
+    border:none!important;
+
+    padding:14px 30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    background:transparent!important;
+
+    border:2px solid var(--primary-color)!important;
+
+    color:var(--primary-color)!important;
+
+    padding:12px 30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary-color)!important;
+
+    color:white!important;
+
+}
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    animation:fadeIn 1.5s ease;
+
+}
+
+.hero-avatar{
+
+    width:530px;
+
+    max-width:100%;
+
+    position:relative;
+
+    z-index:2;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.hero-avatar-container{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.avatar-glow{
+
+    position:absolute;
+
+    width:340px;
+
+    height:340px;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.25);
+
+    filter:blur(70px);
+
+    animation:pulseGlow 5s ease-in-out infinite;
+
+    z-index:0;
+
+}
+
+.hero-socials{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:35px;
+
+    align-items:center;
+
+}
+
+.hero-socials a{
+
+    color:var(--text-secondary);
+
+    font-size:1.8rem;
+
+    transition:.3s ease;
+
+}
+
+.hero-socials a:hover{
+
+    color:var(--primary-color);
+
+    transform:translateY(-5px) scale(1.15);
+
+}
+
+.scroll-indicator{
+
+    margin-top:70px;
+
+    text-align:center;
+
+    animation:fadeIn 2s ease;
+
+}
+
+.scroll-indicator a{
+
+    text-decoration:none;
+
+    color:var(--text-secondary);
+
+    display:inline-flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.scroll-indicator a:hover{
+
+    color:var(--primary-color);
+
+}
+
+.scroll-icon{
+
+    font-size:1.3rem;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulseGlow{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.6;
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.6;
+
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+@media(max-width:992px){
+
+.hero-section{
+
+    text-align:center;
+
+    padding-top: 18px;
+
+}
+
+.hero-content{
+
+    margin-bottom:60px;
+
+
+}
+
+.hero-name{
+
+    font-size:3rem;
+
+}
+
+.hero-title{
+
+    font-size:1.6rem;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-avatar{
+
+    width:400px;
+
+}
+
+.hero-socials{
+    justify-content:center; 
+}
+
+}
