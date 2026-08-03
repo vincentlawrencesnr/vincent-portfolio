@@ -1,16 +1,149 @@
-# React + Vite
+# 💼 Vincent Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website showcasing my skills, projects, and journey as a Software Engineer. Built with React and Vite, the portfolio features modern UI/UX, smooth animations, responsive design, and an integrated contact form powered by EmailJS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Preview
 
-## React Compiler
+![Portfolio Homepage](./public/screenshots/vincent-portfolio.jpeg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 👋 Modern Hero section
+- 🙋 About Me section
+- 💼 Professional Journey timeline
+- 🚀 Skills showcase
+- 📂 Featured Projects
+- 📧 Contact form with EmailJS integration
+- 📋 Copy-to-clipboard email button
+- 🔔 Custom animated success and error toast notifications
+- ⬆️ Scroll-to-top button
+- 📱 Fully responsive across all devices
+- 🎨 Smooth animations and interactive UI
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- Vite
+- JavaScript (ES6+)
+- Bootstrap
+- CSS3
+- React Icons
+- EmailJS
+
+---
+
+## 🚀 Live Demo
+
+https://vincenteke.vercel.app
+
+---
+
+## 📂 Repository
+
+https://github.com/vincentlawrencesnr/vincent-portfolio
+
+---
+
+## 📥 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/vincentlawrencesnr/vincent-portfolio.git
+```
+
+Navigate into the project
+
+```bash
+cd vincent-portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+---
+
+## 📂 Project Structure
+
+```
+src
+├── assets
+├── components
+│   ├── Navbar
+│   ├── Hero
+│   ├── About
+│   ├── Journey
+│   ├── Skills
+│   ├── Projects
+│   ├── Contact
+│   ├── Footer
+│   └── BackToTop
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🌟 Featured Projects
+
+### 🍔 InstantBite
+
+A modern food ordering web application built with React.
+
+🔗 Live Demo:
+https://instant-bite.vercel.app
+
+📂 Repository:
+https://github.com/vincentlawrencesnr/instantBite
+
+---
+
+### 🌙 Moonlight Events
+
+A responsive event management website showcasing festivals and cultural events.
+
+🔗 Live Demo:
+https://moonlight-events-five.vercel.app
+
+📂 Repository:
+https://github.com/vincentlawrencesnr/MoonlightEvents---Festival-App
+
+---
+
+## 👨‍💻 Author
+
+**Vincent Eke**
+
+Software Engineer
+
+🌐 Portfolio:
+https://vincenteke.vercel.app
+
+💼 LinkedIn:
+https://www.linkedin.com/in/vincent-lawrence-9bb9023b4
+
+🐙 GitHub:
+https://github.com/vincentlawrencesnr
+
+📧 Email:
+vincentlawrence077@gmail.com
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
