@@ -376,6 +376,91 @@ In Css, outline: none; removes the visual ouline that browsers draw around eleme
     }
 }
 
+
+/* .email-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.email-row a{
+    flex:1;
+    min-width:0;
+    overflow-wrap:anywhere;
+}
+
+.copy-btn{
+    flex-shrink:0;
+}
+
+@media (max-width:576px){
+
+    .email-row{
+        gap:8px;
+    }
+
+} */
+
+
+.contact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:22px;
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:18px;
+
+    transition:.35s ease;
+}
+
+.contact-icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+}
+
+.contact-card > div:last-child{
+    flex:1;
+
+    min-width:0;
+}
+
+.contact-card a{
+
+    color:var(--text-secondary);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    overflow-wrap:anywhere;
+    
+    word-break:break-word;
+}
+
+
+
+
+
+
+
 /*
 transform:translateX(100%);
 
