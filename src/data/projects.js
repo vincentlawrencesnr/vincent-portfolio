@@ -3,12 +3,55 @@ import moonlight2 from "../assets/images/moonlight2.jpeg";
 import instantBite from "../assets/images/instantBite.jpeg";
 import musicplayer from "../assets/images/musicplayerJava.jpeg";
 import travelJapa from "../assets/images/travelJapaCS.jpeg";
+import freshfind from "../assets/images/freshfind-home.png";
 
 const projects = [
-
     {
 
         id: 1,
+
+        title: "FreshFind",
+
+        image: freshfind,
+
+        description:
+            "A responsive local market discovery platform that helps users explore fresh-produce markets, filter and sort market listings, check real-time market status, find nearby markets using browser geolocation, calculate distances, explore produce, and access market locations through Google Maps.",
+
+        technologies: [
+
+            "React",
+
+            "JavaScript",
+
+            "React Router",
+
+            "Vite",
+
+            "CSS",
+
+            "Browser Geolocation API",
+
+            "LocalStorage"
+
+        ],
+
+        github:
+            "https://github.com/vincentlawrencesnr/freshfind",
+
+        live:
+            "https://freshfind-alpha.vercel.app",
+
+        browser: "freshfind-alpha.vercel.app",
+
+        status: "Completed",
+
+        featured: true
+
+    },
+
+    {
+
+        id: 2,
 
         title: "InstantBite",
 
@@ -45,7 +88,7 @@ const projects = [
 
     {
 
-        id: 2,
+        id: 3,
 
         title: "Moonlight Events",
 
@@ -82,7 +125,7 @@ const projects = [
 
      {
 
-        id: 3,
+        id: 4,
 
         title: "JavaFX Music Player",
 
@@ -116,7 +159,7 @@ const projects = [
 
     {
 
-        id: 4,
+        id: 5,
 
         title: "TravelJapa",
 
