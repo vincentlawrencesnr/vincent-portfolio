@@ -1,9 +1,8 @@
-import moonlight from "../assets/images/moonlight.jpeg"; 
-import moonlight2 from "../assets/images/moonlight2.jpeg"; 
-import instantBite from "../assets/images/instantBite.jpeg";
+ import instantbite from "../assets/images/instantbite-home.png";
 import musicplayer from "../assets/images/musicplayerJava.jpeg";
 import travelJapa from "../assets/images/travelJapaCS.jpeg";
 import freshfind from "../assets/images/freshfind-home.png";
+import moonlightevents from "../assets/images/moonlightevents-home.png";
 
 const projects = [
     {
@@ -55,7 +54,7 @@ const projects = [
 
         title: "InstantBite",
 
-        image:instantBite,
+        image:instantbite,
 
         description:
             "A modern food ordering web application that allows users to browse meals, add items to a shopping cart, filter menu categories, and enjoy a responsive user experience.",
@@ -92,7 +91,7 @@ const projects = [
 
         title: "Moonlight Events",
 
-        image: moonlight2,
+        image: moonlightevents,
 
         description:
             "A modern event management website that allows users to explore upcoming festivals, filter events by month and category, view detailed information in elegant modals, and download event details as PDF documents.",
